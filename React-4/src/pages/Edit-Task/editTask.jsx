@@ -53,6 +53,8 @@ const EditTask = () => {
               height={77}
               width={77}
             />
+
+
           </main>
         ) : (
           <div className="edit-task">

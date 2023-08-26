@@ -186,9 +186,9 @@ border-color: #dc3545;
 /* ==============================
      Animation for span element
 =============================== */
-span {
+/* span {
   animation: heart 7s infinite linear;
-}
+} */
 
 @keyframes heart {
   0%,

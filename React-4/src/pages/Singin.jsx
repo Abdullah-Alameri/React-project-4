@@ -120,9 +120,41 @@ const signInBTN = (eo) => {
       )}
 
     
-      
+<div className="form-box">
+  <form className="form">
+    <span className="title">Sign in</span>
+    <span className="subtitle">Sign in to continue.</span>
+    <div className="form-container">
 
-        <form>
+
+
+      <input   onChange={(eo) => {
+                setemail(eo.target.value);
+              }}
+       type="email" className="input" placeholder="Email" />
+
+
+      <input     onChange={(eo) => {
+                setpassword(eo.target.value);
+              }}
+       type="password" className="input" placeholder="Password" />
+
+
+    </div>
+    <button 
+            onClick={(eo) => {
+              signInBTN(eo)
+            }}  
+    >Sign in</button>
+  </form>
+  <div className="form-section">
+    <p>
+      Don't have an account? <Link to="/signup">Signup</Link>{" "}
+    </p>
+  </div>
+</div>
+
+        {/* <form>
           <input
             onChange={(eo) => {
               setemail(eo.target.value);
@@ -170,7 +202,7 @@ const signInBTN = (eo) => {
           </p>
 
           {hasError && <h2>{firebaseError}</h2>}
-        </form>
+        </form> */}
       </main>
       <Footer />
     </>

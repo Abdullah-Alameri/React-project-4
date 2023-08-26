@@ -141,7 +141,46 @@ const Signup = () => {
         <Header />
 
         <main>
-          <form>
+        <div className="form-box">
+  <form className="form">
+    <span className="title">Sign up</span>
+    <span className="subtitle">Create a free account with your email.</span>
+    <div className="form-container">
+
+
+      <input   onChange={(eo) => {
+                setuserName(eo.target.value);
+              }}
+       type="text" className="input" placeholder="UserName" />
+
+
+      <input   onChange={(eo) => {
+                setemail(eo.target.value);
+              }}
+       type="email" className="input" placeholder="Email" />
+
+
+      <input     onChange={(eo) => {
+                setpassword(eo.target.value);
+              }}
+       type="password" className="input" placeholder="Password" />
+
+
+    </div>
+    <button 
+              onClick={(eo) => {
+                signUpBTN(eo);
+              }}
+    >Sign up</button>
+  </form>
+  <div className="form-section">
+    <p>
+      Have an account? <Link to="/signin">Log in</Link>{" "}
+    </p>
+  </div>
+</div>
+
+          {/* <form>
             <p dir="auto" style={{ fontSize: "23px", marginBottom: "22px" }}>
               {i18n.language === "en" && "Create a new account "}
               {i18n.language === "ar" && "انشاء حساب جديد "}
@@ -196,7 +235,7 @@ const Signup = () => {
             </p>
 
             {hasError && <h2>{firebaseError}</h2>}
-          </form>
+          </form> */}
         </main>
         <Footer />
       </>
