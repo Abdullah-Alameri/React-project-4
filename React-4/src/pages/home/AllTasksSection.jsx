@@ -179,8 +179,9 @@ const AllTasksSection = ({ user }) => {
             </div>
           )}
 
-          <select className="select"
-            style={{ alignSelf: "flex-end"}}
+          <select
+            className="select"
+            style={{ alignSelf: "flex-end" }}
             value={selectVlaue}
             onChange={(eo) => {
               if (eo.target.value === "aaa") {
@@ -217,11 +218,9 @@ const AllTasksSection = ({ user }) => {
         <section className="flex all-tasks mt">
           {value.docs.length === 0 && (
             <h1>
-              {i18n.language === "en" &&
-                "Congratulations! You have copleted your tasks 💪"}
-              {i18n.language === "ar" && " 💪 تهانينا! لقد أكملت مهامك"}
-              {i18n.language === "fr" &&
-                "Toutes nos félicitations! Vous avez terminé vos tâches 💪"}
+              {i18n.language === "en" && "Add a task 👇"}
+              {i18n.language === "ar" && " 👇أضف مهمة"}
+              {i18n.language === "fr" && "Füge eine Aufgabe hinzu 👇"}
             </h1>
           )}
           {/* Get date from DB */}

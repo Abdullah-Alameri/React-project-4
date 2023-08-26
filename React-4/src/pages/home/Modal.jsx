@@ -87,7 +87,7 @@ const HomeModal = ({
             }}
             requi
             required
-            placeholder="Title"
+            placeholder=""
             className="form__field"
             type="text"
             value={taskTitle}
@@ -103,7 +103,7 @@ const HomeModal = ({
               datailsInput(eo);
             }}
             required
-            placeholder="Details"
+            placeholder=""
             className="form__field"
             type="text"
             value={subTask}

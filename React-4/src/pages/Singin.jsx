@@ -87,7 +87,8 @@ const signInBTN = (eo) => {
       <main>
       {showModal && (
       <Modal closeModal={closeModal}>
-      <input
+      <input style={{marginBottom: "30px"}}
+       className="form__field"
               onChange={(eo) => {
                 setresetPass(eo.target.value);
               }}
@@ -95,7 +96,7 @@ const signInBTN = (eo) => {
               placeholder=" E-mail : "
               type="email"
             />
-            <button
+            <button className="modal__btn"
               onClick={(eo) => {
                 eo.preventDefault();
 
@@ -151,6 +152,20 @@ const signInBTN = (eo) => {
     <p>
       Don't have an account? <Link to="/signup">Signup</Link>{" "}
     </p>
+
+    <p
+            onClick={() => {
+              forgotPassword()
+            }}
+            className="forgot-pass mtt"
+          >
+            {i18n.language === "en" && "  Forgot password ?"}
+            {i18n.language === "ar" && "  هل نسيت كلمة السر ؟"}
+            {i18n.language === "fr" && "  Mot de passe oublié ?"}
+          
+          </p>
+
+          {hasError && <h2>{firebaseError}</h2>}
   </div>
 </div>
 
