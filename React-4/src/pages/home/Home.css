@@ -125,14 +125,14 @@
 4- Modal
 =================================*/
 .home .model-content {
-  margin-top: 85px;
+  margin-top: 35px;
   height: 100%;
   text-align: left;
 }
 
 .home .modal li {
   font-size: 13px;
-  color: #333;
+  color: #ccc;
   list-style-type: circle;
   list-style-position: inside;
   margin-bottom: 6px;

@@ -30,8 +30,16 @@
 
 .Dark {
   color: rgba(255, 255, 255, 0.87);
-  background-image: url('../src/images/bc.png');
-  background-size: cover;
+  /* background-image: url('../src/images/bc.png');
+  background-size: cover; */
+  /* background: linear-gradient(to top, rgb(116, 108, 108), rgb(48, 10, 43)); */
+  background: radial-gradient(80% 40%, rgb(109, 95, 114), rgb(67, 46, 75));
+
+}
+
+.Light {
+  /* background: linear-gradient(to top, white, rgb(209, 205, 241)); */
+
 }
 
 .Dark main {
